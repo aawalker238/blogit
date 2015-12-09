@@ -1,0 +1,21 @@
+<% obj.reverse_each do |article| %>
+  <div class="row">
+    <div class="col-xs-8 col-xs-offset-2">
+      <div class="well well-lg">
+        <div class="article-title">
+          <%= link_to article.title.upcase, article_path(article) %>
+        </div>
+        <div class="article-body">
+          <%= truncate(article.description.downcase, length: 100) %>
+          <div class="article-meta-details">
+            <small><mark>~ Published by <%= article.user.username if article.user %> <%= time_ago_in_words(article.created_at) %> ago</mark></small>
+          </div>
+        </div>
+        <div class="article-actions">
+          <%= link_to '<span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Edit'.html_safe, edit_article_path(article), class: "btn btn-xs btn-primary" %>
+          <%= link_to '<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Delete'.html_safe, article_path(article), method: :delete, data: { confirm: "Are you sure you want to delete this article?" }, class: "btn btn-xs btn-danger" %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
