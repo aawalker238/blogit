@@ -22,7 +22,7 @@ $navbar-default-bg: #333333;
 }
 
 #logo:hover {
-  color: #007399;
+  color: #426760;
   text-decoration: none;
 }
 
@@ -35,22 +35,31 @@ $navbar-default-bg: #333333;
 }
 
 .jumbotron {
-  background-image: asset-url("pic02.jpg");
+  background-image: asset-url("typewriter.jpg");
   background-size: cover;
   height: 650px;
 }
 
 .jumbotron h1 {
   color: #f2f2f2;
+  text-shadow: 0px 2px 3px #555;
   text-align: center;
-  margin-bottom: 30px;
+  margin-top: 300px;
   letter-spacing: -1px;
   font-weight: bold;
+
 }
 
 .btn-xlarge {
   font-size: 1.7em;
-  background-color: #007399;
+/*   background-color:  */
+  text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
+  background-color: #416A62; background-image: -webkit-gradient(linear, left top, left bottom, from(#416A62), to(#7DA694));
+  background-image: -webkit-linear-gradient(top, #416A62, #7DA694);
+  background-image: -moz-linear-gradient(top, #416A62, #7DA694);
+  background-image: -ms-linear-gradient(top, #416A62, #7DA694);
+  background-image: -o-linear-gradient(top, #416A62, #7DA694);
+  background-image: linear-gradient(to bottom, #416A62, #7DA694);
   border: solid 2px #fff;
   transition-property: background;
   transition-duration: 1s;
@@ -61,6 +70,12 @@ $navbar-default-bg: #333333;
   font-size: 1.7em;
 /*   background-color: #007399; */
   border: solid 2px #fff;
+  background-color: #2e4a45; background-image: -webkit-gradient(linear, left top, left bottom, from(#2e4a45), to(#628e7b));
+  background-image: -webkit-linear-gradient(top, #2e4a45, #628e7b);
+  background-image: -moz-linear-gradient(top, #2e4a45, #628e7b);
+  background-image: -ms-linear-gradient(top, #2e4a45, #628e7b);
+  background-image: -o-linear-gradient(top, #2e4a45, #628e7b);
+  background-image: linear-gradient(to bottom, #2e4a45, #628e7b);
 }
 
 .article-meta-details {
