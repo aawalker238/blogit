@@ -147,6 +147,13 @@ $navbar-default-bg: #333333;
   font-weight: bold;
 }
 
+.badge_edit {
+  background-color: #ffb3b3;
+  test-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
 .input_checkbox input {
   width: auto !important;
 }
