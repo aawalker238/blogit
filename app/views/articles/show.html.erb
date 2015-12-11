@@ -18,6 +18,9 @@
       </div>
     </ul>
   <% end %>
+  <% if @article.categories.any? %>
+    <p>Categories: <%= render @article.categories %></p>
+  <% end %>
   <div class="article-actions">
     <%= link_to '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Back to Articles'.html_safe, articles_path, class: "btn btn-xs btn-success" %>
     <% if logged_in? && (current_user == @article.user || current_user.admin?) %>
